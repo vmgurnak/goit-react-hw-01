@@ -1,4 +1,3 @@
-// import './Profile.css';
 import css from './Profile.module.css';
 
 const Profile = ({
@@ -37,9 +36,3 @@ const Profile = ({
 };
 
 export default Profile;
-
-// name — ім'я користувача
-// tag — тег в соціальній мережі без @
-// location — місто і країна
-// image — посилання на зображення
-// stats — об'єкт з інформацією про активності

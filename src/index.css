@@ -1,4 +1,7 @@
-/* Box model * */
+/* Fonts */
+@import url(./fonts.css);
+
+/* Box model */
 html {
   box-sizing: border-box;
 }
@@ -56,7 +59,10 @@ img {
   display: block;
 }
 
+/* ------------BASE STYLES------------ */
+
 body {
+  font-family: 'Roboto';
   color: #1b1b1b;
   background-color: #fff;
 }
