@@ -1,6 +1,9 @@
 import css from './FriendListItem.module.css';
 
+import clsx from 'clsx';
+
 const FriendListItem = ({ avatar, name, isOnline }) => {
+  console.log(isOnline);
   return (
     <div className={css.FriendListItemWrapper}>
       <img
@@ -10,7 +13,15 @@ const FriendListItem = ({ avatar, name, isOnline }) => {
         width="48"
       />
       <p className={css.FriendListItemName}>{name}</p>
-      <p className={css[isOnline]}>{isOnline ? 'Online' : 'Offline'}</p>
+      {/* <p className={css[isOnline]}>{isOnline ? 'Online' : 'Offline'}</p> */}
+      <p
+        className={clsx(css.FriendListItemStatus, {
+          [css.statusOnline]: isOnline,
+          [css.statusOffline]: !isOnline,
+        })}
+      >
+        {isOnline ? 'Online' : 'Offline'}
+      </p>
     </div>
   );
 };
