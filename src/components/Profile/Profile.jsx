@@ -10,7 +10,7 @@ const Profile = ({
   return (
     <div className={css.profileWrapper}>
       <div className={css.profileUser}>
-        <img className={css.profileImg} src={image} alt="User avatar" />
+        <img className={css.profileImg} src={image} alt={`Avatar ${name}`} />
         <p className={css.profileName}>{name}</p>
         <p className={css.ProfileTag}>@{tag}</p>
         <p className={css.ProfileLocation}>{location}</p>

@@ -10,17 +10,19 @@ import userData from './userData.json';
 import friends from './friends.json';
 import transactions from './transactions.json';
 
+const { username, tag, location, avatar, stats } = userData;
+
 const App = () => {
   return (
     <div className="container">
       <div className="wrapComponent">
-        <h2 className="titleComponent">Prifile</h2>
+        <h2 className="titleComponent">Profile</h2>
         <Profile
-          name={userData.username}
-          tag={userData.tag}
-          location={userData.location}
-          image={userData.avatar}
-          stats={userData.stats}
+          name={username}
+          tag={tag}
+          location={location}
+          image={avatar}
+          stats={stats}
         />
       </div>
       <div className="wrapComponent">

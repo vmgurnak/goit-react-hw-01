@@ -8,7 +8,7 @@ const FriendListItem = ({ avatar, name, isOnline }) => {
       <img
         className={css.FriendListItemImg}
         src={avatar}
-        alt="Avatar image"
+        alt={`Avatar ${name}`}
         width="48"
       />
       <p className={css.FriendListItemName}>{name}</p>
